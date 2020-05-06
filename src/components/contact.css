@@ -1,0 +1,29 @@
+#contact {
+    background-color: #f3f3f3;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#contact h1 {
+    font-family: 'Catamaran';
+    font-size: 45px;
+    text-align: center;
+    margin: 0;
+}
+
+.MuiFormControl-root {
+    width: 100%;
+}
+
+.MuiInputBase-root, .MuiInputBase-input {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+}

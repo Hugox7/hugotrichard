@@ -1,0 +1,68 @@
+#top {
+    height: 760px;
+    background: url('../assets//wallpaper4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+#top-info {
+    text-align: center;
+    color: white;
+    
+}
+
+#top h2 {
+    font-family: 'Pridi';
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+}
+
+#top-info p {
+    font-family: 'Noto sans';
+    /* font-weight: 600; */
+    font-size: 25px;
+    margin-top: 54px;
+    font-style: italic;
+}
+
+#top-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 54px;
+}
+
+.cursor {
+    color: white;
+}
+
+.logo-wrapper {
+    height: 60px;
+    margin: 10px 18px;
+}
+
+.logo-wrapper img {
+    height: 100%;
+}
+
+/* media queries */
+
+@media screen and (max-width: 450px) {
+    #top h2 {
+      font-size: 50px
+    }
+  }
+
+  @media screen and (min-width: 450px) {
+    #top h2 {
+      font-size: 70px
+    }
+  }

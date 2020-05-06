@@ -1,0 +1,31 @@
+#qui-suis-je {
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#qui-suis-je h1 {
+    font-family: 'Catamaran';
+    font-size: 45px;
+    text-align: center;
+    margin: 0;
+}
+
+#qui-suis-je img {
+    max-width: 100%;
+    box-shadow: 5px 5px 10px grey;
+}
+
+#qui-suis-je h3 {
+    font-family: 'Pridi';
+    font-size: 22px;
+    margin-top: 0;
+}
+
+#qui-suis-je p {
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    color: #383838;
+}

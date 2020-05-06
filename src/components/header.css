@@ -1,0 +1,109 @@
+#header {
+    height: 100px;
+    background-color: #383838;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+}
+
+#logo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    padding: 3px 0px;
+    cursor: pointer;
+}
+
+#logo img {
+    height: 100%;
+}
+
+#logo h2 {
+    font-family: 'Catamaran';
+    font-weight: 300;
+    font-size: 35px;
+    color: white;
+}
+
+#logo p {
+    font-family: 'Pridi';
+    font-size: 20px;
+    position: absolute;
+    top: 37px;
+    left: 8px;
+    color: #6f8f72;
+}
+
+#web {
+    color: #ffb356;
+}
+
+#nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+
+.link-home {
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px 0px 6vw;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin: 0px 15px;
+    font-family: 'Pridi';
+}
+
+.link-responsive {
+    margin: 7px 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Pridi';
+    font-size: 20px;
+}
+
+.link:hover, .link-home:hover, .link-responsive:hover {
+    color: #ffb356;
+    text-decoration: none;
+}
+
+#nav-responsive {
+    position: absolute;
+    right: 36px;
+}
+
+.MuiDrawer-paper {
+    width: 280px;
+    background-color: #383838 !important;
+    color: white !important;
+    padding: 20px;
+    position: relative;
+}
+
+
+
+@media screen and (max-width: 759px) {
+    #nav {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 760px) {
+    #nav-responsive {
+      display: none;
+    }
+  }

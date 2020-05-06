@@ -1,0 +1,15 @@
+#creations {
+    background-color: #f3f3f3;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#creations h1 {
+    font-family: 'Catamaran';
+    font-size: 45px;
+    text-align: center;
+    margin: 0;
+}

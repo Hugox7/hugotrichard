@@ -1,0 +1,80 @@
+.card-project {
+    height: 320px;
+    background-color: white;
+    margin: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 5px 5px 10px lightgray;
+    position: relative;
+}
+
+.card-project img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+#calc {
+    position: absolute;
+    top: 0;
+    bottom: 360px;
+    right: 0;
+    left: 0;
+    background-color: #383838;
+    transition: bottom 0.4s;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    
+}
+
+#calc-content {
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    text-align: justify;
+    transition: opacity 0.4s;
+    color: white;
+    font-family: 'Noto Sans';
+}
+
+.card-project:hover #calc {
+    bottom: 0;
+}
+
+.card-project:hover #calc-content {
+    opacity: 1;
+    
+}
+
+#calc-buttons {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card-project:hover #calc-buttons {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out 0.25s;
+}
+
+@media screen and (max-width: 400px) {
+    .card-project {
+      width: 220px;
+    }
+}
+
+@media screen and (min-width: 401px) {
+    .card-project {
+      width: 300px;
+    }
+}

@@ -1,0 +1,33 @@
+#compétences {
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#compétences h1 {
+    font-family: 'Catamaran';
+    font-size: 45px;
+    text-align: center;
+    margin: 0;
+}
+
+#compétences h3 {
+    margin-bottom: 30px;
+    font-family: 'Pridi';
+    color: #383838;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.grid-part {
+    margin: 0px 20px;
+}
+
+.divers {
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans';
+    color: #383838;
+}

@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import './app.css';
 import Header from './components/Header';
 import Main from './components/Main';
+import Footer from './components/Footer';
 
 class App extends React.Component {
 
@@ -39,6 +40,7 @@ class App extends React.Component {
                     <Switch>
                         <Route exact path="/" component={Main} />
                     </Switch>
+                    <Footer />
                 </div>
             );
         }   

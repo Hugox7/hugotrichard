@@ -93,7 +93,7 @@ const Contact = () => {
                             color='primary' 
                             variant='contained'
                             disabled={loading}
-                            onClick={handleSubmit}
+                            onClick={() => setOpen(true)}
                         >
                             { loading ? <CircularProgress size={20}  color="secondary" /> : 'envoyer' }
                         </Button>
@@ -120,7 +120,9 @@ const Contact = () => {
                 aria-labelledby="simple-modal-title"
                 aria-describedby="simple-modal-description"
             >
-                <p>hello</p>
+                <div style={{ height: '200px', width: '300px', backgroundColor: 'white' }}>
+                    hello
+                </div>
             </Modal>
         </div>
     );

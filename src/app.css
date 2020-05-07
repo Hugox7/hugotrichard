@@ -1,3 +1,106 @@
 .app {
   position: relative;
+  overflow-x: hidden;
 }
+
+
+#loading {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #383838;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* spinner animation if needed */
+
+/* elem-name {
+  height: 100px;
+  -webkit-animation: rotateY 1.5s infinite linear;
+  animation: rotateY 1.5s infinite linear;
+}
+
+@-webkit-keyframes rotateY {
+  to { -webkit-transform: rotateY(360deg); }
+}
+@keyframes rotateY {
+  to { transform: rotateY(360deg); }
+} */
+
+
+
+@import  url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+}
+
+.loading {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.text {
+  color: #ffb356;
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.bounceball {
+  position: relative;
+  display: inline-block;
+  height: 37px;
+  width: 15px;
+}
+
+.bounceball:before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffb356;
+  transform-origin: 50%;
+  animation: bounce 500ms alternate infinite ease;
+}
+   
+    
+  
+
+
+@keyframes bounce {
+  0% {
+    top: 30px;
+    height: 5px;
+    border-radius: 60px 60px 20px 20px;
+    transform: scaleX(2);
+  }
+  35% {
+    height: 15px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0;
+  }
+}
+
+
+
+
+

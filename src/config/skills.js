@@ -2,6 +2,7 @@ export const skills = [
     'Gestion de projet (SCRUM)',
     'Responsive Design',
     'Git',
+    'Git flow',
     'MongoDB',
     'MySQL',
     'Knex / Objection',

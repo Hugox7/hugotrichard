@@ -87,7 +87,6 @@
 }
 
 .MuiDrawer-paper {
-    width: 280px;
     background-color: #383838 !important;
     color: white !important;
     padding: 20px;
@@ -96,14 +95,28 @@
 
 
 
-@media screen and (max-width: 759px) {
+@media screen and (max-width: 795px) {
     #nav {
       display: none;
     }
   }
 
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 796px) {
     #nav-responsive {
       display: none;
+    }
+  }
+
+
+
+  @media screen and (min-width: 530px) {
+    .MuiDrawer-paper {
+      width: 55%;
+    }
+  }
+
+  @media screen and (max-width: 529px) {
+    .MuiDrawer-paper {
+      width: 280px;
     }
   }

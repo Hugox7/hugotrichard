@@ -49,7 +49,7 @@ const Header = () => {
                             className='link'
                             to="#creations"
                             scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
-                        >Mes créations</Link>
+                        >mes Créations</Link>
                         <Link
                             className='link'
                             to="/#qui-suis-je"

@@ -19,7 +19,7 @@ const Creations = () => {
             <div style={{ height: '60px' }} />
             <Grid className={classes.root} container justify='center'>
                 {creations.map(creation => {
-                    return <ProjectCard creation={creation} />
+                    return <ProjectCard key={creation.id} creation={creation} />
                 })}
             </Grid>
             <div style={{ height: '30px' }} />

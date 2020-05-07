@@ -26,5 +26,6 @@ export const useStyles = makeStyles({
     },
     button: {
         width: '100%',
-    }
+    },
+    
 });

@@ -1,6 +1,6 @@
 #contact {
     background-color: #f3f3f3;
-    padding: 50px 30px;
+    padding: 50px 30px 80px 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -24,6 +24,44 @@
     margin-bottom: 20px;
 }
 
+.MuiButtonBase-root {
+    box-shadow: 0px 0px 0px !important;
+}
+
+.MuiButtonBase-root:hover {
+    background-color: #33658a !important;
+}
+
+.MuiButton-label {
+    color: white;
+    font-weight: bold;
+}
+
 form {
     width: 100%;
+}
+
+#infos {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#infos p {
+    margin: 0px;
+    font-family: 'Catamaran';
+    font-size: 20px;
+}
+
+#infos div {
+    display: flex;
+    margin-top: 30px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
 }

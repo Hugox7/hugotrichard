@@ -27,7 +27,7 @@ class App extends React.Component {
                    <div className="wrap">
                         <div className="loading">
                             <div className="bounceball"></div>
-                            <div className="text">CHARGEMENT...</div>
+                            <div className="text">CHARGEMENT. . .</div>
                         </div>
                     </div>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
+import Bounce from 'react-reveal/Bounce';
 
 import './about.css';
 import Separator from './Separator';
@@ -29,16 +30,14 @@ const About = () => {
             <h1>Qui suis-je ?</h1>
             <Separator />
             <div style={{ height: '90px' }} />
-            <Grid className={classes.root} container justify="center" spacing={8}>
+            <Grid className={classes.root} container justify="center" spacing={8}> 
+                <Grid item xl={1} lg={1} md={12} sm={12} xs={12} />
                 
-                <Grid item xl={2} lg={1} md={12} sm={12} xs={12} />
                 <Grid item xl={3} lg={3} md={6} sm={12} xs={12}>
-                
                     <img src={hugo} alt="hugo trichard" />
-                
                 </Grid>
+                
                 <Grid item xl={5} lg={5} md={6} sm={12} xs={12}>
-
                     <div>
                         <h3>Je m'appelle Hugo Trichard, j'ai {age} ans et je suis développeur web.</h3>
                         <p>
@@ -59,8 +58,8 @@ const About = () => {
                             football américain en club.
                         </p>
                     </div>
+                </Grid> 
 
-                </Grid>  
             </Grid>
             <div style={{ height: '40px' }} />
         </div>

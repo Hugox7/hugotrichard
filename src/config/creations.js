@@ -9,7 +9,7 @@ export const creations = [
     {   
         id: 1,
         title: "Nestranny Conseil",
-        description: "Société de conseil et de formation en finances. Le site a été lancé en juillet 2019 et est en constante évolution.",
+        description: "Société de conseil et de formation en finances. Le site a été lancé en juillet 2019 et est en constante évolution. Il proposera bientôt des cours en ligne.",
         photo: nestranny,
         url: "http://www.nestranny-conseil.fr/",
         code: 'https://github.com/Hugox7/NestrannyReact',

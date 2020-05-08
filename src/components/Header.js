@@ -16,7 +16,7 @@ const Header = () => {
 
     const handleReload = () => {
         window.location.reload();
-        window.location.href = '#accueil';
+        //window.location.href = '#accueil';
     }
 
     const handleShowDrawer = () => {
@@ -49,7 +49,7 @@ const Header = () => {
                             className='link'
                             to="#creations"
                             scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
-                        >mes Créations</Link>
+                        >Mes créations</Link>
                         <Link
                             className='link'
                             to="/#qui-suis-je"

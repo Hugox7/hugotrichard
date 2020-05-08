@@ -3,11 +3,11 @@ import emailjs from 'emailjs-com';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import Modal from '@material-ui/core/Modal';
 import { LinkedinOutlined, GithubOutlined } from '@ant-design/icons';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import PhoneIcon from '@material-ui/icons/Phone';
 import { ValidatorForm, TextValidator} from 'react-material-ui-form-validator';
+import { Alert, AlertTitle } from '@material-ui/lab';
 
 import './contact.css';
 import { useStyles } from '../config/muiStyles';
@@ -21,7 +21,7 @@ const Contact = () => {
     const [message, setMessage] = useState('');
     const [loading, setLoading] = useState(false);
     const [response, setResponse] = useState(null);
-    const [open, setOpen] = useState(false);
+    const [error, setError] = useState(null);
 
 
     const handleSubmit = async (e) => {
@@ -41,11 +41,10 @@ const Contact = () => {
             console.log(response);
             setResponse(response);
             setLoading(false);
-            resetForm();
-            //setOpen(true);
+            resetForm(); 
         } catch (error) {
             console.log(error);
-            setResponse(error);
+            setError(error);
             resetForm();
         }
     }
@@ -56,12 +55,9 @@ const Contact = () => {
         setMessage('');
     }
 
-    const handleClose = () => {
-        setOpen(false);
-      };
-
     return (
         <div id='contact'>
+            
             <h1>Contact</h1>
             <Separator />
             <div style={{ height: '90px' }} />
@@ -72,6 +68,18 @@ const Contact = () => {
                         onSubmit={handleSubmit}
                         onError={errors => console.log(errors)}
                     >
+                        <div className='alert-part'>
+                            {error &&
+                                <Alert onClose={() => setError(null)} severity="error">
+                                    Erreur lors de l'envoi du message !
+                                </Alert>
+                            }
+                            {response &&
+                                <Alert onClose={() => setResponse(null)} severity="success">
+                                    Merci pour votre message, je reviendrai vers vous rapidement :)
+                                </Alert>
+                            }
+                        </div>
                         <TextValidator 
                             onChange={(e) => setEmail(e.target.value)} 
                             type='email' size='small' 
@@ -116,23 +124,17 @@ const Contact = () => {
                         <p className='contact-info'><MailOutlineIcon style={{ marginRight: '5px' }} />hugo.trichard@gmail.com</p>
                         <p className='contact-info'><PhoneIcon style={{ marginRight: '5px' }} />06.83.11.83.44</p>
                         <div>
-                            <LinkedinOutlined style={{ fontSize: '45px', color: '#383838', marginRight: '6px' }} />
-                            <GithubOutlined style={{ fontSize: '45px', color: '#383838', marginLeft: '6px' }} />
+                            <a href="https://www.linkedin.com/in/hugo-trichard-881213170/" target='_blank' rel="noopener noreferrer">
+                                <LinkedinOutlined style={{ fontSize: '45px', color: '#383838', marginRight: '6px' }} />
+                            </a>
+                            <a href="https://github.com/Hugox7" target='_blank' rel="noopener noreferrer">
+                                <GithubOutlined style={{ fontSize: '45px', color: '#383838', marginLeft: '6px' }} />
+                            </a>
                         </div>
                     </div>
                 </Grid>
                 
             </Grid>
-            <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="simple-modal-title"
-                aria-describedby="simple-modal-description"
-            >
-                <div style={{ height: '200px', width: '300px', backgroundColor: 'white' }}>
-                    hello
-                </div>
-            </Modal>
         </div>
     );
 }

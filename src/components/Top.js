@@ -8,8 +8,8 @@ const Top = () => {
     return (
         <div id="top">
                 
-                {/* <h2>Développeur Web</h2> */}
-                <div  id='dev'>
+                <h2>Développeur Web</h2>
+                {/* <div  id='dev'>
                     <Wave 
                         text="Développeur Web" 
                         iterations={1}
@@ -17,7 +17,7 @@ const Top = () => {
                         effectDirection="down"
                     
                     />
-                </div>
+                </div> */}
                 
                 
                 <div id="top-links">

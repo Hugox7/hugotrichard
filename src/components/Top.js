@@ -31,15 +31,16 @@ const Top = () => {
                         </a>
                     </div>
                     <div className="logo-wrapper">
-                        <a href="https://github.com/Hugox7" target='_blank' rel="noopener noreferrer"><GithubOutlined style={{ fontSize: '40px', color: '#ffb356' }} /></a>
+                        <a href="https://github.com/Hugox7" target='_blank' rel="noopener noreferrer">
+                            <GithubOutlined style={{ fontSize: '40px', color: '#ffb356' }} />
+                        </a>
                     </div>
                     
                 </div>
                 <div id="top-info">
                     
                     <p>
-                        " Bienvenue sur mon site, je m'appelle Hugo Trichard et je suis développeur web spécialisé front-end<br />
-                        mais ayant également de bonnes connaissances en back-end. Bonne visite. "
+                        " Hello et bienvenue, je m'appelle Hugo Trichard et je suis développeur web.<br />Bonne visite. "
                     </p>
                     
                 </div>

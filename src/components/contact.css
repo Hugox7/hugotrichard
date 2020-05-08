@@ -19,9 +19,9 @@
 }
 
 .MuiInputBase-root, .MuiInputBase-input {
+    margin-top: 20px;
     width: 100%;
     background-color: white;
-    margin-bottom: 20px;
 }
 
 .MuiButtonBase-root {
@@ -35,6 +35,10 @@
 .MuiButton-label {
     color: white;
     font-weight: bold;
+}
+
+.MuiFormHelperText-root {
+    margin: 3px 5px !important;
 }
 
 form {

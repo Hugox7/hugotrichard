@@ -8,6 +8,7 @@ import Modal from '@material-ui/core/Modal';
 import { LinkedinOutlined, GithubOutlined } from '@ant-design/icons';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import PhoneIcon from '@material-ui/icons/Phone';
+import { ValidatorForm, TextValidator} from 'react-material-ui-form-validator';
 
 import './contact.css';
 import { useStyles } from '../config/muiStyles';
@@ -68,16 +69,21 @@ const Contact = () => {
             <Grid className={classes.root} container spacing={6}>
                 <Grid item xl={2} lg={2} md={12} sm={12} xs={12} />
                 <Grid xl={4} lg={4} md={6} sm={12} xs={12} item>
-                    <form classes={classes.form}>
-                        <TextField 
+                    <ValidatorForm
+                        onSubmit={handleSubmit}
+                        onError={errors => console.log(errors)}
+                    >
+                        <TextValidator 
                             onChange={(e) => setEmail(e.target.value)} 
                             type='email' size='small' 
                             placeholder='Votre adresse email' 
                             variant='outlined'
                             name='email'
                             value={email}
+                            validators={['required', 'isEmail']}
+                            errorMessages={['Champ obligatoire', 'Adresse mail non valide']}
                         />
-                        <TextField 
+                        <TextValidator 
                             onChange={(e) => setMessage(e.target.value)} 
                             multiline={true} 
                             type='text' 
@@ -87,17 +93,21 @@ const Contact = () => {
                             rows='10' 
                             name='message'
                             value={message}
+                            className='text-input'
+                            validators={['required']}
+                            errorMessages={['Champ obligatoire']}
                         />
                         <Button 
                             className={classes.button} 
                             color='primary' 
                             variant='contained'
                             disabled={loading}
-                            onClick={() => setOpen(true)}
+                            type='submit'
+                            style={{ marginTop: '20px' }}
                         >
                             { loading ? <CircularProgress size={20}  color="secondary" /> : 'envoyer' }
                         </Button>
-                    </form>
+                    </ValidatorForm>
                 </Grid>
                 <Grid xl={4} lg={4} md={6} sm={12} xs={12} item>
                     <div id='infos'>

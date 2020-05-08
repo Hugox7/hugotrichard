@@ -74,26 +74,31 @@ const Header = () => {
                                 className='link-responsive'
                                 to="/#top"
                                 scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                                onClick={handleHideDrawer}
                             ><HomeOutlined style={{ fontSize: 25 }} /></Link>
                             <Link
                                 className='link-responsive'
                                 to="/#compétences"
                                 scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                                onClick={handleHideDrawer}
                             >Mes compétences</Link>
                             <Link
                                 className='link-responsive'
                                 to="/#creations"
                                 scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                                onClick={handleHideDrawer}
                             >Mes créations</Link>
                             <Link
                                 className='link-responsive'
                                 to="/#qui-suis-je"
                                 scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                                onClick={handleHideDrawer}
                             >Qui suis-je ?</Link>
                             <Link
                                 className='link-responsive'
                                 to="/#contact"
                                 scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                                onClick={handleHideDrawer}
                             >Contact</Link>
                         </div>
                     </Drawer>

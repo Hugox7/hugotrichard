@@ -7,7 +7,7 @@ import { LinkedinOutlined, GithubOutlined } from '@ant-design/icons';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import PhoneIcon from '@material-ui/icons/Phone';
 import { ValidatorForm, TextValidator} from 'react-material-ui-form-validator';
-import { Alert, AlertTitle } from '@material-ui/lab';
+import { Alert } from '@material-ui/lab';
 
 import './contact.css';
 import { useStyles } from '../config/muiStyles';
@@ -132,9 +132,9 @@ const Contact = () => {
                             </a>
                         </div>
                     </div>
-                </Grid>
-                
+                </Grid> 
             </Grid>
+            <div style={{ height: '80px' }} />
         </div>
     );
 }

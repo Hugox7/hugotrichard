@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import Bounce from 'react-reveal/Bounce';
+import { Link } from 'react-router-dom';
 
 import './about.css';
 import Separator from './Separator';
@@ -47,7 +47,7 @@ const About = () => {
                         <p>
                             J'ai ensuite pu effectuer un stage de 6 mois au sein de la société Ezeeworld à Neuilly-sur-Seine, qui m'a permis de consolider
                             mes acquis, de continuer à apprendre et de connaitre les specificités de ce métier au sein d'une agence Web. J'ai pu travailler sur différents
-                            projets aussi bien en front qu'en back-end.
+                            projets aussi bien en front qu'en back-end. <Link to='/ezeeworld'>Voir les détail des missions ici.</Link>
                         </p>
                         <p>
                             J'ai une préférence pour la partie front-end qui mêle créativité et design. J'ai malgré tout de bonnes connaissances en back-end

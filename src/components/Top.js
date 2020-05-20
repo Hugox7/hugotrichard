@@ -1,6 +1,5 @@
 import React from 'react';
 import { LinkedinOutlined, MailOutlined, GithubOutlined } from '@ant-design/icons';
-import { Wave } from 'react-animated-text';
 
 import './top.css';
 
@@ -9,16 +8,6 @@ const Top = () => {
         <div id="top">
                 
                 <h2>Développeur Web</h2>
-                {/* <div  id='dev'>
-                    <Wave 
-                        text="Développeur Web" 
-                        iterations={1}
-                        effect="verticalFadeIn"
-                        effectDirection="down"
-                    
-                    />
-                </div> */}
-                
                 
                 <div id="top-links">
                     

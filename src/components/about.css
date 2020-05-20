@@ -6,6 +6,10 @@
     align-items: center;
 }
 
+#qui-suis-je a {
+    text-decoration: none;
+}
+
 #qui-suis-je h1 {
     font-family: 'Catamaran';
     font-size: 45px;

@@ -5,6 +5,7 @@ import './app.css';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
+import Ezeeworld from './components/Ezeeworld';
 
 class App extends React.Component {
 
@@ -39,6 +40,8 @@ class App extends React.Component {
                     <Header />
                     <Switch>
                         <Route exact path="/" component={Main} />
+                        <Route path='/ezeeworld' component={Ezeeworld} />
+                        <Route path='*' component={() => 'ERROR 404'} />
                     </Switch>
                     <Footer />
                 </div>

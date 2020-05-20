@@ -81,7 +81,8 @@
 
   .scroll-down {
 	position: absolute;
-	left: 50%;
+  left: 50%;
+  margin-left: -11px;
 	bottom: 50px;
 	display: block;
 	text-align: center;
